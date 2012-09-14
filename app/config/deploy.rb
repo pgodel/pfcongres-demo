@@ -9,9 +9,10 @@ ssh_options[:forward_agent] = true
 
 set :use_sudo,    false
 
-set :repository,  "#{domain}:/var/repos/#{application}.git"
+set :use_composer, true
+
+set :repository,  "git://github.com/pgodel/pfcongres-demo.git"
 set :scm,         :git
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `subversion`, `mercurial`, `perforce`, or `none`
 
 set :model_manager, "doctrine"
 # Or: `propel`
