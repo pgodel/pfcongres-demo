@@ -10,7 +10,7 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/hello/{name}")
-     * @Route("/", defaults={"name" = "visitor"})
+     * @Route("/", defaults={"name" = "Boca Raton"})
      * @Template()
      */
     public function indexAction($name)
